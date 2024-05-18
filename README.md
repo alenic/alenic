@@ -1,5 +1,12 @@
+<table>
+<tr>
+<th> Code </th>
+<th> Output </th>
+</tr>
+<tr>
+<td>
+
 ```bash
-$ python -c '''
 import numpy, cv2, sklearn
 import sklearn.preprocessing
 img = cv2.resize(cv2.imread("alenic.jpeg", 0), (34,24))
@@ -7,8 +14,19 @@ h,w = img.shape
 img = 255-(numpy.round(img*(10/255))*(255/10)).astype(numpy.uint8)
 img = sklearn.preprocessing.LabelEncoder().fit_transform(img.flatten()).reshape(h,w)
 print(*["".join([" .-:!*+x#@"[int(img[i,j])]for j in range(w)])for i in range(h)], sep="\n")
-'''
 ```
+
+</td>
+<td>
+
+<img src="out.png" alt="drawing" height="180"/>
+
+</td>
+</tr>
+</table>
+
+
+
 Hi 👋 I am Alessandro!
 🧠 **Artificial Intelligence** is both my passion and profession. While my primary specialization is in **Computer Vision**, I am also actively working in other areas such as **Natural Language Processing** and **Multimodal Learning**.
 
