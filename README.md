@@ -15,7 +15,9 @@ print(*["".join([[" ","#"][int(img[i,j]>0)]for j in range(78)])for i in range(8)
  ##  # #  # #  # ## ##     # #  ## ## #   # ## #                              
  ## ### ######### ###      # #   ### ### ### ####     #  
 ```
-Hi 👋 I am Alessandro! Aritifcial Intelligence is my passion, life and job.
+Hi 👋 I am Alessandro!
+
+**Aritifcial Intelligence** is my passion and job. My main specialization is in **Computer Vision**, but I am working in many other areas as well, like NLP and Multimodal Learning.
 
 I appreciate feedback and contributions!
 
