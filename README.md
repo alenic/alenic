@@ -2,31 +2,30 @@
 $ python -c '''
 import numpy, cv2, sklearn
 import sklearn.preprocessing
-img = cv2.imread("alenic.jpeg", 0)
-img = cv2.resize(img, (32,16))
-h,w=img.shape
-img = (numpy.round(img*(4/255))*(255/4)).astype(int)
+img = cv2.resize(cv2.imread("alenic.jpeg", 0), (32,16))
+h,w = img.shape
+img = 255-(numpy.round(img*(5/255))*(255/5)).astype(int)
 img = sklearn.preprocessing.LabelEncoder().fit_transform(img.flatten()).reshape(h,w)
-print(*["".join([" .+#"[int(img[i,j])]for j in range(w)])for i in range(h)], sep="\n")
+print(*["".join([" .:x#"[int(img[i,j])]for j in range(w)])for i in range(h)], sep="\n")
 '''
 ```
 ```                                                                 
-................................
-............++.+++  ............
-.......... +......... ..........
-......... . ........#. .........
-........ ..###########. ........
-........ ..+##########+.........
-........ .+#######+++++.........
-........++.. ..+#+.. ..+........
-........++##############........
-........+++############+........
-......... .+.++...++++. ........
-.......... .++.....+++ .........
-........... +##..+##+ ..........
-........ +.+...+#+...++..   ....
-..... +....+++.....+++......+++ 
-+............+++++++............
+::::::::::::::::::::::::::::::::
+::::::::::::.:x:::##:x::::::::::
+::::::::::#:xxxxxxxxxx::::::::::
+:::::::::#x#xxx:xxxx x#x::::::::
+::::::::#xx           x#::::::::
+::::::::#xx.          .xx:::::::
+::::::::#x.       ...:.xx:::::::
+:::::::::.xx#xx. .xx#xx.xx::::::
+:::::::::.        .    .xx::::::
+:::::::::..            .x:::::::
+:::::::::#x.x..xxx...:x#::::::::
+::::::::::#x..::x:x...#:::::::::
+:::::::::::#.  xx.  .#::::::::::
+:::::::x#:x.xxx. .xxx..x:###::::
+:::::#:xxxx...xxxxx...xxxxxx:::#
+:xxxxxxxxxxxx......:xxxxxxxxxxxx
 ```
 Hi 👋 I am Alessandro!
 🧠 **Artificial Intelligence** is both my passion and profession. While my primary specialization is in **Computer Vision**, I am also actively working in other areas such as **Natural Language Processing** and **Multimodal Learning**.
