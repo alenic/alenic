@@ -29,9 +29,10 @@ print(*["".join([" .+#"[int(img[i,j])]for j in range(w)])for i in range(h)], sep
 +............+++++++............
 ```
 Hi 👋 I am Alessandro!
+🧠 **Artificial Intelligence** is both my passion and profession. While my primary specialization is in **Computer Vision**, I am also actively working in other areas such as **Natural Language Processing** and **Multimodal Learning**.
 
-**Aritifcial Intelligence** is my passion and job. My main specialization is in **Computer Vision**, but I am working in many other areas as well, like NLP and Multimodal Learning.
+In my free time, I like experimenting with **Reinforcement Learning**.
 
-I appreciate feedback and contributions!
+❗️I welcome and appreciate any feedback and contributions.
 
-If you want to contact me: [Linkedin Profile](https://linkedin.com/in/alessandro-nicolosi/)
+🌐 Contact: [Linkedin - Alessandro Nicolosi](https://linkedin.com/in/alessandro-nicolosi/)
