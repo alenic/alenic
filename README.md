@@ -15,3 +15,8 @@ print(*["".join([[" ","#"][int(img[i,j]>0)]for j in range(78)])for i in range(8)
  ##  # #  # #  # ## ##     # #  ## ## #   # ## #                              
  ## ### ######### ###      # #   ### ### ### ####     #  
 ```
+Hi 👋 I am Alessandro! Aritifcial Intelligence is my passion, life and job.
+
+I appreciate feedback and contributions!
+
+If you want to contact me: [Linkedin Profile](https://linkedin.com/in/alessandro-nicolosi/)
