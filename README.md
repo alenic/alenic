@@ -7,13 +7,14 @@
 <td>
 
 ```bash
-import numpy, cv2, sklearn
-import sklearn.preprocessing
-img = cv2.resize(cv2.imread("alenic.jpeg", 0), (34,24))
+import cv2
+img = cv2.resize(cv2.imread("alenic.jpg", 0), (34,24))
 h,w = img.shape
-img = 255-(numpy.round(img*(10/255))*(255/10)).astype(numpy.uint8)
-img = sklearn.preprocessing.LabelEncoder().fit_transform(img.flatten()).reshape(h,w)
-print(*["".join([" .-:!*+x#@"[int(img[i,j])]for j in range(w)])for i in range(h)], sep="\n")
+Q = 9
+GrayChar = " .-:!*+x#@"
+img = 255-((img*(Q/255)).round()*(255/Q))
+img = (img*Q/255).astype(int)
+print(*["".join([GrayChar[int(img[i,j])]for j in range(w)])for i in range(h)], sep="\n")
 ```
 
 </td>
