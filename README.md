@@ -1,6 +1,6 @@
 <table>
 <tr>
-<th> Code </th>
+<th> img_2ascii.py </th>
 <th> Output </th>
 </tr>
 <tr>
@@ -9,17 +9,14 @@
 ```python
 import cv2
 img = cv2.resize(cv2.imread("alenic.jpg", 0), (34,24))
-h,w = img.shape
-Q = 9
 gray_chr = " .-:!*+x#@"
-img = 255-((img*(Q/255)).round()*(255/Q))
-img = (img*Q/255).astype(int)
-print(*["".join([gray_chr[int(img[i,j])]for j in range(w)])for i in range(h)], sep="\n")
+img_q = ((255-img)*((len(gray_chr)-1)/255)).astype(int)
+print(*["".join([gray_chr[x]for x in y])for y in img_q], sep="\n")
 ```
 
 </td>
 <td>
-<img src="out.png" alt="drawing" height="180"/>
+<img src="out.png" alt="drawing" height="110"/>
 </td>
 </tr>
 </table>
