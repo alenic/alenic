@@ -19,9 +19,7 @@ print(*["".join([gray_chr[int(img[i,j])]for j in range(w)])for i in range(h)], s
 
 </td>
 <td>
-
 <img src="out.png" alt="drawing" height="180"/>
-
 </td>
 </tr>
 </table>
@@ -29,10 +27,13 @@ print(*["".join([gray_chr[int(img[i,j])]for j in range(w)])for i in range(h)], s
 
 
 Hi 👋 I am Alessandro!
-🧠 **Artificial Intelligence** is both my passion and profession. While my primary specialization is in **Computer Vision**, I am also actively working in other areas such as **Natural Language Processing** and **Multimodal Learning**.
+
+🧠 **Artificial Intelligence** is both my passion and profession.
+
+While my primary specialization is in **Computer Vision**, I am also actively working in other areas such as **Natural Language Processing** and **Multimodal Learning**.
 
 In my free time, I like experimenting with **Reinforcement Learning**.
 
-❗️I welcome and appreciate any feedback and contributions.
+I welcome and appreciate any feedback and contributions ❗️
 
-🌐 Contact: [Linkedin - Alessandro Nicolosi](https://linkedin.com/in/alessandro-nicolosi/)
+🌐 [Linkedin - Alessandro Nicolosi](https://linkedin.com/in/alessandro-nicolosi/)
