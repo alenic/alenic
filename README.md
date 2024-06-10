@@ -1,36 +1,15 @@
-<table>
-<tr>
-<th> img_2ascii.py </th>
-<th> Output </th>
-</tr>
-<tr>
-<td>
-
-```python
-import cv2
-img = cv2.resize(cv2.imread("alenic.jpg", 0), (34,24))
-gray_chr = " .-:!*+x#@"
-img_q = ((255-img)*((len(gray_chr)-1)/255)).astype(int)
-print(*["".join([gray_chr[x]for x in y])for y in img_q], sep="\n")
-```
-
-</td>
-<td>
-<img src="out.png" alt="drawing" height="110"/>
-</td>
-</tr>
-</table>
 
 
 
 Hi 👋 I am Alessandro!
 
-🧠 **Artificial Intelligence** is both my passion and profession.
+🧠 **Artificial Intelligence** is both my passion and profession. I am actively working in the areas of:
+- 👁️ **Computer Vision**
+- 🤖 **Natural Language Processing**
+- 👾 **Reinforcement Learning**
 
-While my primary specialization is in **Computer Vision**, I am also actively working in other areas such as **Natural Language Processing** and **Multimodal Learning**.
+I welcome and appreciate any feedback and contributions
 
-In my free time, I like experimenting with **Reinforcement Learning**.
 
-I welcome and appreciate any feedback and contributions ❗️
-
-🌐 [Linkedin - Alessandro Nicolosi](https://linkedin.com/in/alessandro-nicolosi/)
+- 🌐 [Linkedin - Alessandro Nicolosi](https://linkedin.com/in/alessandro-nicolosi/)
+- 🌐 [Kaggle - Alessandro Nicolosi](https://www.kaggle.com/alenic)
