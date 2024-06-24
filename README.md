@@ -11,5 +11,5 @@ Hi 👋 I am Alessandro!
 I welcome and appreciate any feedback and contributions
 
 
-- 🌐 [Linkedin - Alessandro Nicolosi](https://linkedin.com/in/alessandro-nicolosi/)
-- 🌐 [Kaggle - Alessandro Nicolosi](https://www.kaggle.com/alenic)
+- 🌐 [Linkedin](https://linkedin.com/in/alessandro-nicolosi/)
+- 🌐 [Kaggle](https://www.kaggle.com/alenic)
